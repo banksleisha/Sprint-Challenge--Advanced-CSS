@@ -18,9 +18,21 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    @media screen {display: none;}
+   
   }
+    .space-view{
+      @media (max-width: 500px){width: 97%;}
+    }
+    .blast{
+      @media (max-width: 500px){Width: 100%;}
+    }
+    .sky{
+      @media (max-width: 500px){display:none;}
+    }
 
+    .launch{
+      @media (max-width: 500px){display: none;}
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -62,13 +74,24 @@
         .custom(10px 10px, 20%, 10px);
         }
 
+      .btn{ 
+        @media (max-width: 500px){
+          .media-mix(350px, 30px *2, 10px);
+        }
+        @media (max-width: 500px){
+          
+      
+  
+        }
+      }
+
       .btn{
         font-size: 10px;
         text-align: center;
       background-color:@btn-bg-color;
       color: @wild-sand;
       cursor: pointer;
-
+      
       &:hover {
         background-color: @porcelain;
         color: @ebony-clay;
@@ -82,7 +105,9 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media (max-width: 500px){
+        width: auto;
+      }
       img {
         width: 100%;
         height: auto;
