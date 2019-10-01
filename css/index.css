@@ -257,7 +257,7 @@ footer {
     margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    padding: 20px 30px;
+    padding: 10px 20px 30px;
   }
 }
 .walk .walk-text {
@@ -309,7 +309,8 @@ footer {
 }
 @media (max-width: 500px) {
   .walk .walk-img {
-    width: auto;
+    margin-left: 0;
+    width: 100%;
   }
 }
 .walk .walk-img img {
