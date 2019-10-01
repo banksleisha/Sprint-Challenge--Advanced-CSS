@@ -21,17 +21,18 @@
    
   }
     .space-view{
-      @media (max-width: 500px){width: 97%;}
+      width: 100%;
+      @media @phone {width: 97%;}
     }
     .blast{
-      @media (max-width: 500px){Width: 100%;}
+      @media @phone {Width: 100%;}
     }
     .sky{
-      @media (max-width: 500px){display:none;}
+      @media @phone {display:none;}
     }
 
     .launch{
-      @media (max-width: 500px){display: none;}
+      @media @phone {display: none;}
     }
     img {
       width: 28%;
@@ -60,8 +61,21 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      padding: 20px 30px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -75,27 +89,30 @@
         }
 
       .btn{ 
-        @media (max-width: 500px){
-          .media-mix(350px, 30px *2, 10px);
+        @media @phone {
+          .media-mix(350px, 30px *2, 10px);         
         }
       }
 
       .btn{
         font-size: 10px;
         text-align: center;
-      background-color:@btn-bg-color;
-      color: @wild-sand;
-      cursor: pointer;
+        background-color:@btn-bg-color;
+        color: @wild-sand;
+        cursor: pointer;
+
+      @media @phone {
+        font-size: large;
+        text-align: center;
+      }
       
       &:hover {
         background-color: @porcelain;
         color: @ebony-clay;
       }
+
     }
     }
-
-    
-
 
     .walk-img {
       width: 46%;
